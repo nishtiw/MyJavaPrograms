@@ -1,0 +1,26 @@
+Question: Given an integer S,  write a program to print the square wall of size S using a single loop and string multiplication. Try not to use nested loops. 
+
+Example 1:
+
+Input:
+S = 5
+Output:
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+
+Explanation:
+Its perfect square wall. 
+
+Solution: 
+public static void squareWall(int s){
+    
+    //Write your code here
+    String ch = "* ";
+    for(int i=1; i<=s; i++)
+    {
+        System.out.println(ch.repeat(s));
+    }
+}
