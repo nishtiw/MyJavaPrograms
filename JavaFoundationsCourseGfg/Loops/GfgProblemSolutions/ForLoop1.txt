@@ -1,0 +1,17 @@
+Question: You are given a number N, you need to print its multiplication table in a single line.
+
+Example 1:
+Input:
+N = 5
+Output:
+5 10 15 20 25 30 35 40 45 50
+
+Solution: 
+public static void utility(int n){
+    
+    //code here
+    //for loop to be added
+    for(int i=1; i<=10; i++) {
+        System.out.print(n*i+" ");
+    }
+}
