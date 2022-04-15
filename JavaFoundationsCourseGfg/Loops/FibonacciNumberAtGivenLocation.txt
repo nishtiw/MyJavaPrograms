@@ -1,0 +1,32 @@
+Question: Given an integer n. Write a program to find the nth Fibonacci number.
+The nth Fibonacci number is given by the forumla F(n) = F(n-1) + F(n-2). The first few fibonacci numbers are: 1 1 2 3 5... and so on. 
+
+Example 1:
+
+Input:
+n = 4
+Output: 
+3
+Explanation:
+In the series 1 1 2 3 5...... the fourth fibonacci number is 3.
+
+Solution: 
+public static int fibonacci(int n){
+        
+    //Write your code here to calculate
+    //to calculate the nth fibonacci number
+        int a=1, b=1, c=1;
+        for(int i=3; i<=n; i++)
+        {
+            if(i == n)
+            {
+                c = a + b;
+                return c;
+                
+            }
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        return c;
+}
