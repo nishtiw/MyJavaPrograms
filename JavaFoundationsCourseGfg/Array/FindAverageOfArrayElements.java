@@ -16,7 +16,7 @@ public class FindAverageOfArrayElements
 	}
 	public static void FindAverage(int a[])
 	{
-		int sum = 0, avg = 0;
+		double sum = 0, avg = 0;
 		for(int i=0; i<a.length; i++)
 		{
 			sum += a[i];
