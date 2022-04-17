@@ -1,0 +1,39 @@
+Question: You are given a array numbers that contains integers. You need to return one array of same length, first filled with even numbers and then by odd numbers. 
+
+Example 1:
+Input:
+numbers = [54, 43, 2, 5, 14, 17, 18, 9]
+Output: 
+54 2 14 18 43 5 17 19
+
+Example 2:
+Input:
+numbers = [5, 6, 7, 2, 4, 8, 9]
+Output:
+6 2 4 8 5 7 9
+
+Solution:
+public static int[] evenOdd(int[] numbers){
+
+    //write your code here
+    //return required array
+    int nums[] = new int[numbers.length];
+    int i=0;
+    for(int number: numbers)
+    {
+        if(number%2 == 0)
+        {
+            nums[i] = number;
+            i++;
+        }
+    }
+    for(int number: numbers)
+    {
+        if(number%2 != 0)
+        {
+            nums[i] = number;
+            i++;
+        }
+    }
+    return nums;
+}
