@@ -1,0 +1,33 @@
+Question: You are given a number k and a array numbers that contains integers. You need to return array of numbers that are less than k. 
+
+Example 1:
+
+Input:
+numbers = [54, 43, 2, 1, 5]
+k = 6
+Output: 
+2 1 5
+Explanation: 2 1 5 are less than 6.
+
+Solution:
+public static int[] lessThan(int[] numbers,int k){
+    
+    //write your code here
+    //return array with elements less than k
+    int temp[] = new int[numbers.length];
+    int currentIndex = 0;
+    for(int number: numbers)
+    {
+        if(number<k)
+        {
+            temp[currentIndex] = number;
+            currentIndex++;
+        }
+    }
+    int nums[] = new int[currentIndex];
+    for(int i=0; i<nums.length; i++)
+    {
+        nums[i] = temp[i];
+    }
+    return nums;
+}
