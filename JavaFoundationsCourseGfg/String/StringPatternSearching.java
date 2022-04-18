@@ -12,3 +12,7 @@ public class StringPatternSearching
 		}
 	}
 }
+
+
+//Try the following input: 
+// txt1 = "aaaaa", pattern1 = "aaa" 
