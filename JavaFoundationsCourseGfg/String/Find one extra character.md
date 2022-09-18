@@ -3,6 +3,7 @@
 https://practice.geeksforgeeks.org/batch/Java-Foundation/track/Java-Foundation-String/problem/find-one-extra-character 
 
 ## My solution: 
+```
 public static char extraChar(String s1, String s2){
 
     //write your code here
@@ -22,3 +23,4 @@ public static char extraChar(String s1, String s2){
     }
     
 }
+```
